@@ -1,0 +1,5 @@
+<a href="/">Home</a> <a href="/history/">Most Recent</a>
+{% for item in cow_history %}
+<ul style="list-style: none;">
+    <li>{{item.cowfield}}</li>
+</ul> {% endfor %}

@@ -1,0 +1,14 @@
+
+<h1>Cowsay App</h1>
+<a href="/">Home</a> <a href="/history/">Most Recent</a>
+<div>
+    <pre>{{cow_process}}</pre>
+</div>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+
+
